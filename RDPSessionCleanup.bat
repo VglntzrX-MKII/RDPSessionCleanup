@@ -18,8 +18,8 @@ if %errorLevel% neq 0 (
     exit /b 1
 )
 
-echo Vglntzr's RDP Session Cleanup v0.2a - Logging out disconnected sessions for Windows Server 2008 R2+ and Client Equivalent
-echo =========================================================================================================================
+echo Vglntzr's RDP Session Cleanup v0.2a - Logging out disconnected sessions 
+echo ==========================================================================
 echo Script executed on: %date% %time%
 echo.
 
