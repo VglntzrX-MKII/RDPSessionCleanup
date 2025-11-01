@@ -72,5 +72,6 @@ echo:
 
 if !TOTAL_SESSIONS! equ 0 (
     echo No disconnected RDP sessions found.
+    echo:
 )
 exit /b
