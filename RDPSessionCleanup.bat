@@ -1,8 +1,14 @@
 @echo off
 setlocal enabledelayedexpansion
 
-if not exist "C:\RDPLogs" mkdir "C:\RDPLogs" >nul 2>&1
-call :Main >> "C:\RDPLogs\run.log" 2>&1
+:: ===========================================================================
+:: CONFIGURATION
+:: Set the directory where logs will be created. Use quotes for paths with spaces.
+set "LOG_PATH=C:\RDPLogs"
+:: ===========================================================================
+
+if not exist "%LOG_PATH%" mkdir "%LOG_PATH%" >nul 2>&1
+call :Main >> "%LOG_PATH%\run.log" 2>&1
 exit /b 0
 
 :Main
@@ -12,8 +18,8 @@ if %errorLevel% neq 0 (
     exit /b 1
 )
 
-echo Vglntzr's RDP Session Cleanup v0.1 - Logging out disconnected sessions
-echo ===========================================================================
+echo Vglntzr's RDP Session Cleanup v0.2a - Logging out disconnected sessions for Windows Server 2008 R2+ and Client Equivalent
+echo =========================================================================================================================
 echo Script executed on: %date% %time%
 echo.
 
