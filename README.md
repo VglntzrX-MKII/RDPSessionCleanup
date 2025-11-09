@@ -1,4 +1,4 @@
-# 💻 RDP Session Cleanup Script
+# 💻 RDP Session Cleanup Script (RDPSC) 
 
 ## 📝 Overview
 
